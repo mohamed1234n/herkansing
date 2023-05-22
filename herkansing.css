@@ -104,17 +104,22 @@ h1 {
 }
 .footr_col{
     width: 25%;
-    padding: 0 15px;
+    padding:  15px;
+  
 }
 .footer{
      background: #24262b;
      padding: 50px;
+
+     
      
  }
  
  .footer .main{
      max-width: 100%;
-     height: 60px;
+     height: 150px;
+     position: absolute;
+
     
 
  }
@@ -154,4 +159,23 @@ footer {
 html {
     height: 100%;
 
+}
+html,
+body {
+  height: 100%; 
+  margin: 0; 
+  padding: 0; 
+}
+
+body {
+  display: flex; 
+  flex-direction: column; 
+}
+
+main {
+  flex: 1; 
+}
+
+footer {
+  flex-shrink: 0; 
 }

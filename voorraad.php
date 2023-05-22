@@ -13,14 +13,14 @@
     <header>
             <div class="circle"></div>
             <div class="circles"></div>
-            <a href="#" class="logo">ESRI-<span>digitaal</span></a>
+            <a href="#" class="logo">TELEFOON ZAAK-<span>ORGI</span></a>
             <ul>
               <li><a href="index.php">Home</a></li>
                 <li><a href="Producten.php">Producten</a></li>
                 <li><a href="voorraad.php">Voorraad</a></li>
                 <li><a href="bestellingen.php">bestellingen</a></li>
             </ul>
-         <a href="cart.php"><p>S-cart</p></a>
+         <a href="bestelwagen.php"><p>S-cart</p></a>
          
         </header>
 

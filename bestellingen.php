@@ -5,7 +5,7 @@ session_start();
 require_once ("CreateDb.php");
 require_once ("component.php");
 
-$db = new CreateDb("Productdb", "Producttb");
+$db = new CreateDb("Productdb");
 
 if (isset($_POST['remove'])){
   if ($_GET['action'] == 'remove'){
@@ -29,6 +29,7 @@ if (isset($_POST['remove'])){
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="herkansing.css">
     <title>Cart</title>
 
     <!-- Font Awesome -->
@@ -56,6 +57,7 @@ if (isset($_POST['remove'])){
          <a href="cart.php"><p>S-cart</p></a>
          
         </header>
+        
 
 
         <div class="texts">

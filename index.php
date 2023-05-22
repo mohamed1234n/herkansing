@@ -56,14 +56,13 @@
                         <li><a href="Landenoverzicht.php">landenoverzicht</a></li>
                         <li><a href="Retour policy.php">Leveren/Retourneren?</a></li>
                         <li><a href="Leverancier.php">Leverancier</a></li>
-                        <li><a href="tabel.php">Categorie</a></li>
+                        <li><a href="index.php">Categorie</a></li>
                     </ul>
                 </div>
 
                 <div class="footer_col">
                     <h4>Klantenservice</h4>
                     <ul>
-                        <li><a href="">Ons vinden?</a></li>
                         <li><a href="Contact.php">Contact</a></li>
                         <li><a href="Klacht.php">Klacht indienen?</a></li>
                         <li><a href="Review.php">Review</a></li>
@@ -89,3 +88,16 @@
 
 </body>
 </html>
+<body>
+  <header>
+   
+  </header>
+
+  <main>
+ 
+  </main>
+
+  <footer>
+  
+  </footer>
+</body>

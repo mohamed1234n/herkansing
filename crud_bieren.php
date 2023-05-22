@@ -5,7 +5,7 @@
     <body>
         <?php
         // functie: programma overzicht bieren
-        // auteur : Yasin Coban
+        // auteur : mo itzari
         include 'navbar.php';
         include 'functions.php';
 // connect database bieren

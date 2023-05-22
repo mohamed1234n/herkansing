@@ -13,10 +13,10 @@
     <header>
             <div class="circle"></div>
             <div class="circles"></div>
-            <a href="#" class="logo">ESRI-<span>digitaal</span></a>
+            <a href="#" class="logo">TELEFOON ZAAK-<span>ORGI</span></a>
             <ul>
              
-<li><a href="index.php">Home</a></li>
+                <li><a href="index.php">Home</a></li>
             
                 <li><a href="Producten.php">Producten</a></li>
                 <li><a href="voorraad.php">Voorraad</a></li>
@@ -47,21 +47,23 @@
 
         
     </section>
+    
+
 
 
     <div class="about">
         <div class="box">
             <div class="card">
-                <img src="image/ps kaart.jpg">
+                <img src="image/iphone xr.png">
             </div>
             <div class="card">
-                <img src="image/Xbox kaart.png">
+                <img src="image/iphone 11.png">
             </div>
             <div class="card">
-                <img src="image/paysafe.png">
+                <img src="image/iphone 11 pro.png">
             </div>
             <div class="card">
-                <img src="image/download.jpeg">
+                <img src="image/iphone 11 pro max.png">
             </div>
             <div class="card">
                 <img src="image/amazon-gift-card-25-usd-65305.png">
