@@ -20,13 +20,11 @@
                 <li><a href="voorraad.php">Voorraad</a></li>
                 <li><a href="bestellingen.php">bestellingen</a></li>
             </ul>
-         <a href="bestelwagen.php"><p>S-cart</p></a>
+        
          
         </header>
 
-        <div class="background_image">
-            <img src="image/esri-digitaal.png">
-        </div>
+        
 
 <br><br>
 

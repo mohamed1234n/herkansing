@@ -8,21 +8,23 @@
     <link rel="stylesheet" href="herkansing.css">
 </head>
 <body>
+    
 
     <section>
         <header>
             <div class="circle"></div>
             <div class="circles"></div>
-            <a href="#" class="logo">Telefoon zaak <span>orgi</span></a>
+            <a href="#" class="logo">TELEFOON ZAAK <span>ORGI  </span></a>
             <ul>
                 <li><a href="index.php">Home</a></li>
                 <li><a href="producten.php">producten</a></li>
                 <li><a href="voorraad.php">Voorraad</a></li>
                 <li><a href="bestellingen.php">bestellingen</a></li>
 </ul>
- <a href=""><p>bestelwagen</p></a>
+ 
          
         </header>
+        <main>
 
         <div class="texts">
             <h1>Telefoon zaak <span>ORGI</span></h1>
@@ -34,9 +36,11 @@
               helpdesk voor je klaar om je zo goed mogelijk van dienst te zijn.<br>
 </p>
 </div>
+</main>
 
         
 </div>
+</section>
 <footer class="footer">
         <div class="main">
             <div class="row">
@@ -56,13 +60,14 @@
                         <li><a href="Landenoverzicht.php">landenoverzicht</a></li>
                         <li><a href="Retour policy.php">Leveren/Retourneren?</a></li>
                         <li><a href="Leverancier.php">Leverancier</a></li>
-                        <li><a href="index.php">Categorie</a></li>
+                        <li><a href="tabel.php">Categorie</a></li>
                     </ul>
                 </div>
 
                 <div class="footer_col">
                     <h4>Klantenservice</h4>
                     <ul>
+                        <li><a href="">Ons vinden?</a></li>
                         <li><a href="Contact.php">Contact</a></li>
                         <li><a href="Klacht.php">Klacht indienen?</a></li>
                         <li><a href="Review.php">Review</a></li>
@@ -77,7 +82,6 @@
                         <a href=""><img src="image/twitter.png"></a> <br>
                         <a href=""><img src="image/instagram.png"></a>
                     </div>               
-                    
                         
                     
                 </div>
@@ -86,18 +90,6 @@
     </footer>
 
 
+
 </body>
 </html>
-<body>
-  <header>
-   
-  </header>
-
-  <main>
- 
-  </main>
-
-  <footer>
-  
-  </footer>
-</body>

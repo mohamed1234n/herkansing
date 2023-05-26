@@ -9,6 +9,7 @@
 </head>  
 <body>
 
+
     <section>
     <header>
             <div class="circle"></div>
@@ -22,28 +23,27 @@
                 <li><a href="voorraad.php">Voorraad</a></li>
                 <li><a href="bestellingen.php">bestellingen</a></li>
             </ul>
-         <a href="cart.php"><p>S-cart</p></a>
+
+         
          
         </header>
 
 
 
         <div class="texts">
-            <h1>ESRI <span>Winkel</span></h1>
-            <p>Voor ons is een goede service het allerbelangrijkste. Wanneer jij je abonnement op je favoriete gaming console
-                 wilt verlengen of een nieuwe game wilt kopen voor je telefoon, dan wil je niet lang wachten op je tegoedkaart.
-                  Daarom is het onze missie om je tegoedcode zo snel mogelijk uit te leveren. Alle producten van ESRI.nl
-                   leveren wij rechtstreeks vanuit onze leveranciers. Snel, betrouwbaar en geen extra kosten. Wij garanderen je 
-                   bovendien dat alle codes die je bij ons aanschaft altijd werken! Loop je tegen een probleem aan? Dan staat onze
-                    helpdesk voor je klaar om je zo goed mogelijk van dienst te zijn. Omdat wij een officiële verkoper zijn en onze
-                     eigen afspraken hebben met de aanbieders van de kaarten, kunnen wij de scherpste prijs en beste service aanbieden.<br>
+            <h1>TELEFOON ZAAK <span>ORGI</span></h1>
+            <p>Voor ons is een goede service het allerbelangrijkste. Wanneer jij je abonnement op je favoriete telefoon
+                 wilt verlengen <br> of een nieuwe telefoon wilt kopen, dan wil je niet lang wachten op je telefoon. <br>
+                  Daarom is het onze missie om onze telefoons zo snel mogelijk uit te leveren. <br> Alle producten van TELEFOON ZAAK ORGI
+                   leveren wij rechtstreeks vanuit onze leveranciers. <br> Snel, betrouwbaar en geen extra kosten. Wij garanderen je 
+                   bovendien dat alle telefoons die je bij ons aanschaft altijd werken! <br> Loop je tegen een probleem aan? Dan staat onze
+                    helpdesk voor je klaar om je zo goed mogelijk van dienst te zijn. <br> Omdat wij een officiële verkoper zijn en onze
+                     eigen afspraken hebben met de aanbieders van onze telefoons, <br> kunnen wij de scherpste prijs en beste service aanbieden.<br>
                 
             </p>
         </div>
 
-        <div class="background_image">
-            <img src="image/esri-digitaal.png">
-        </div>
+      
 
         
     </section>
@@ -51,26 +51,27 @@
 
 
 
-    <div class="about">
-        <div class="box">
-            <div class="card">
+    <div class="iphone">
+            <div class="iphone">
                 <img src="image/iphone xr.png">
             </div>
-            <div class="card">
+            <div class="iphone">
                 <img src="image/iphone 11.png">
             </div>
-            <div class="card">
+            <div class="iphone">
                 <img src="image/iphone 11 pro.png">
             </div>
-            <div class="card">
+            <div class="iphone">
                 <img src="image/iphone 11 pro max.png">
             </div>
-            <div class="card">
-                <img src="image/amazon-gift-card-25-usd-65305.png">
+            <div class="iphone">
+                <img src="image/samsung 22.png">
             </div>
-            <div class="card">
-                <img src="image/google-play.webp">
+            <div class="iphone">
+                <img src="image/samsung 22 ultra.png">
             </div>
+
+                
         </div>
         
 
