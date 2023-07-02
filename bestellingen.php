@@ -1,3 +1,9 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="herkansing.css">
+    </head>
+</html>
 <?php
 
 session_start();
@@ -54,7 +60,7 @@ if (isset($_POST['remove'])){
                 <li><a href="voorraad.php">Voorraad</a></li>
                 <li><a href="bestellingen.php">bestellingen</a></li>
             </ul>
-         <a href="cart.php"><p>S-cart</p></a>
+
          
         </header>
         
@@ -129,56 +135,22 @@ if (isset($_POST['remove'])){
 </div>
 
 
+
 <footer class="footer">
         <div class="main">
             <div class="row">
-                <div class="footer_col">
-                    <h4>Ons bedrijf</h4>
-                    <ul>
-                        <li><a href="ecovriendelijkheid.php">Ecovriendelijkheid</a></li>
-                        <li><a href="Medewerkers.php">Onze mederwerkers</a></li>
-                        <li><a href="Geschiedenis.php">Geschiedenis</a></li>
-                        <li><a href="Doelstelling.php">Doelstelling van het bedrijf</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer_col">
-                    <h4>Overige</h4>
-                    <ul>
-                        <li><a href="Landenoverzicht.php">landenoverzicht</a></li>
-                        <li><a href="Retour policy.php">Leveren/Retourneren?</a></li>
-                        <li><a href="Leverancier.php">Leverancier</a></li>
-                        <li><a href="tabel.php">Categorie</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer_col">
-                    <h4>Klantenservice</h4>
-                    <ul>
-                        <li><a href="">Ons vinden?</a></li>
-                        <li><a href="Contact.php">Contact</a></li>
-                        <li><a href="Klacht.php">Klacht indienen?</a></li>
-                        <li><a href="Review.php">Review</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer_col">
-                    <h4>Overige</h4>
-                    <div class="social">
-                        <a href=""><img src="image/facebook.png"></a> <br>
-                        <a href=""><img src="image/Googlell.png"></a> <br>
-                        <a href=""><img src="image/twitter.png"></a> <br>
-                        <a href=""><img src="image/instagram.png"></a>
-                    </div>               
-                        
-                    
-                </div>
-            </div>
+                       
+              
         </div>
     </footer>
+  
+
+
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
+
 </html>

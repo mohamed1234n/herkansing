@@ -6,6 +6,9 @@ section .back{
     margin-left: 25px;
 }
 
+.text{
+    font-size: larger;
+}
 body{
     background-image: url(image/background_image.webp);
 }
@@ -18,7 +21,12 @@ section header{
     justify-content: space-around;
     box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
-
+#indeximg{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    justify-content: right;
+}
 section header .logo{
     font-size: 30px;
     color: black;
@@ -47,7 +55,7 @@ section header ul li a{
 }
 
 section header ul li a:hover{
-    color: #f9004d;
+    color: #353334;
 }
 
 section header p{
@@ -108,7 +116,7 @@ h1 {
   
 }
 .footer{
-     background: #24262b;
+     background: #202122;
      padding: 50px;
 
      
@@ -145,6 +153,7 @@ section texts h1 span{
 }
 
 
+
 .footer .main {
   flex: 1 0 auto; 
    max-width: 1170px;
@@ -167,15 +176,11 @@ body {
  min-height: 100vh;
  display: flex;
  flex: collum;
-
-
+ display: flex; 
+ flex-direction: column; 
 }
 
-body {
-  display: flex; 
-  flex-direction: column; 
 
-}
 html{
 height: 100%;
 }
@@ -187,5 +192,128 @@ height: 100%;
     align-items: center;
     justify-content: center;
 }
+.box cards_card {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), -2px -2px 4px rgba(255, 255, 255, 0.4);
+  }
+  h1{
+    size: 60px;
+  }
 
+  .about{
+    width: 100%;
+    height: 80vh;
+    padding: 0px;
+}
 
+.about .box{
+    width: 100%;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .box .card{
+    width: 170px;
+    height: auto;
+    padding: 5px 10px;
+    margin: 0 15px;
+    background: gainsboro;
+    border: 1px solid gainsboro;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.about .box .card:hover{
+    box-shadow: 3px 5px 20px rgba(0,0,0,0.3);
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
+.about .box .card img{
+    width: 150px;
+}
+
+.about hr{
+    height: 2px;
+    background: #d98ca5;
+    border-radius: 5px;
+    margin: 30px 110px;
+}
+
+.about .Cards h1{
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0;
+}
+
+.about .Cards p{
+    text-align: center;
+    margin: 35px 0;
+    color: gray;
+    font-size: 25px;
+}
+
+.about .cards_box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.about .cards_box .cards_card{
+    background: #9d9d9d;
+    width: 350px;
+    padding: 25px 25px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.about .cards_box .cards_card:hover{
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+}
+
+.about .Cards .cards_box img{
+    width: 250px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.about .Cards .cards_box img:hover{
+    transform: scale(1.1);
+}
+
+.about .cards_box .cards_card h1{
+    font-size: 35px;
+    color: gainsboro;
+    margin: 15px 0;
+}
+
+.about .cards_box .cards_card p{
+    color: white;
+    margin: 25px 0;
+    font-size: 17px;
+}
+
+.about .cards_box .cards_card .btn{
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    background: #f9004d;
+}
+.about .cards_box .cards_card {
+    background: #0b0b0b;
+    width: 350px;
+    padding: 25px 25px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.texts p{
+    font-size: 20px;
+    
+} 

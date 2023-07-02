@@ -41,89 +41,49 @@
                      eigen afspraken hebben met de aanbieders van onze telefoons, <br> kunnen wij de scherpste prijs en beste service aanbieden.<br>
                 
             </p>
-        </div>
-
-      
+        </div> 
+        <?php
+         include 'functions.php';
+        $result = GetData("producten");
+       
+       ?>
 
         
     </section>
+    <div class="Cards">
+            <h1>Products</h1>
+            <p>----Trending Aankopen----</p>
+            <div class="cards_box">
+
+           <?php foreach ($result as $row){ ?>
+                <div class="cards_card">
+                    <img src="image/<?php echo $row ['foto'] ?>" >
+                    <h1> <?php echo $row ['productnaam']?> </h1>
+                    
+                    <p>
+                    <?php echo $row ['toelichting']?>
+                    </p>
+                    <a href="#" class="btn">Uitverkocht</a>
+                </div>
+            <?php } ?>
+
+              
+
     
 
 
 
-    <div class="iphone">
-            <div class="iphone">
-                <img src="image/iphone xr.png">
-            </div>
-            <div class="iphone">
-                <img src="image/iphone 11.png">
-            </div>
-            <div class="iphone">
-                <img src="image/iphone 11 pro.png">
-            </div>
-            <div class="iphone">
-                <img src="image/iphone 11 pro max.png">
-            </div>
-            <div class="iphone">
-                <img src="image/samsung 22.png">
-            </div>
-            <div class="iphone">
-                <img src="image/samsung 22 ultra.png">
-            </div>
-
-                
-        </div>
-        
+    
 
         <footer class="footer">
         <div class="main">
             <div class="row">
-                <div class="footer_col">
-                    <h4>Ons bedrijf</h4>
-                    <ul>
-                        <li><a href="ecovriendelijkheid.php">Ecovriendelijkheid</a></li>
-                        <li><a href="Medewerkers.php">Onze mederwerkers</a></li>
-                        <li><a href="Geschiedenis.php">Geschiedenis</a></li>
-                        <li><a href="Doelstelling.php">Doelstelling van het bedrijf</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer_col">
-                    <h4>Overige</h4>
-                    <ul>
-                        <li><a href="Landenoverzicht.php">landenoverzicht</a></li>
-                        <li><a href="Retour policy.php">Leveren/Retourneren?</a></li>
-                        <li><a href="Leverancier.php">Leverancier</a></li>
-                        <li><a href="tabel.php">Categorie</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer_col">
-                    <h4>Klantenservice</h4>
-                    <ul>
-                        <li><a href="">Ons vinden?</a></li>
-                        <li><a href="Contact.php">Contact</a></li>
-                        <li><a href="Klacht.php">Klacht indienen?</a></li>
-                        <li><a href="Review.php">Review</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer_col">
-                    <h4>Overige</h4>
-                    <div class="social">
-                        <a href=""><img src="image/facebook.png"></a> <br>
-                        <a href=""><img src="image/Googlell.png"></a> <br>
-                        <a href=""><img src="image/twitter.png"></a> <br>
-                        <a href=""><img src="image/instagram.png"></a>
-                    </div>               
-                        
-                    
-                </div>
-            </div>
+                       
+              
         </div>
     </footer>
 
 
-    
+
 </body>
 </html>

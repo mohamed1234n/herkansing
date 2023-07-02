@@ -21,11 +21,12 @@
                 <li><a href="voorraad.php">Voorraad</a></li>
                 <li><a href="bestellingen.php">bestellingen</a></li>
 </ul>
+
  
          
         </header>
+        <img id="indeximg" src="image/background.png" alt="" srcset="">
         <main>
-
         <div class="texts">
             <h1>Telefoon zaak <span>ORGI</span></h1>
             <p>Voor ons is een goede service het aller belangrijkste. Wanneer jij je abonnement op je favoriete telefoon zet. 
@@ -34,6 +35,35 @@
               leveren wij rechtstreeks vanuit onze leveranciers.<br> Snel, betrouwbaar en geen extra kosten. <br> Wij garanderen je 
               bovendien dat alle telefoons die jij bij ons aanschaft altijd werken! Loop je tegen een probleem aan?<br> Dan staat onze
               helpdesk voor je klaar om je zo goed mogelijk van dienst te zijn.<br>
+
+
+        
+              <br>
+              <br>
+              <br> 
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              
+
 </p>
 </div>
 </main>
@@ -44,48 +74,18 @@
 <footer class="footer">
         <div class="main">
             <div class="row">
-                <div class="footer_col">
-                    <h4>Ons bedrijf</h4>
-                    <ul>
-                        <li><a href="ecovriendelijkheid.php">Ecovriendelijkheid</a></li>
-                        <li><a href="Medewerkers.php">Onze mederwerkers</a></li>
-                        <li><a href="Geschiedenis.php">Geschiedenis</a></li>
-                        <li><a href="Doelstelling.php">Doelstelling van het bedrijf</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer_col">
-                    <h4>Overige</h4>
-                    <ul>
-                        <li><a href="Landenoverzicht.php">landenoverzicht</a></li>
-                        <li><a href="Retour policy.php">Leveren/Retourneren?</a></li>
-                        <li><a href="Leverancier.php">Leverancier</a></li>
-                        <li><a href="tabel.php">Categorie</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer_col">
-                    <h4>Klantenservice</h4>
-                    <ul>
-                        <li><a href="">Ons vinden?</a></li>
-                        <li><a href="Contact.php">Contact</a></li>
-                        <li><a href="Klacht.php">Klacht indienen?</a></li>
-                        <li><a href="Review.php">Review</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer_col">
-                    <h4>Overige</h4>
-                    <div class="social">
-                        <a href=""><img src="image/facebook.png"></a> <br>
-                        <a href=""><img src="image/Googlell.png"></a> <br>
-                        <a href=""><img src="image/twitter.png"></a> <br>
-                        <a href=""><img src="image/instagram.png"></a>
-                    </div>               
-                        
                     
+                <div class="footer_col">
+                    <ul>
+                     
+                        <li><a href="Klacht.php">Klacht indienen?</a></li>
+                    
+                    </ul>
                 </div>
-            </div>
+
+            
+                    
+              
         </div>
     </footer>
 

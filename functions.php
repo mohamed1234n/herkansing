@@ -1,11 +1,11 @@
 <?php
-// auteur: Wigmans
+// auteur: yasin
 // functie: algemene functies tbv hergebruik
  function ConnectDb(){
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "bieren";
+    $dbname = "esri";
    
     try {
         $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -39,7 +39,7 @@
     return $result;
  }
 
- function GetBier($biercode){
+ function GetBier($idproduct){
     // Connect database
     $conn = ConnectDb();
 
@@ -48,8 +48,8 @@
     // $result = $conn->query("SELECT * FROM $table")->fetchAll();
 
     // Select data uit de opgegeven table methode prepare
-    $query = $conn->prepare("SELECT * FROM bier WHERE biercode = :biercode");
-    $query->execute([':biercode'=>$biercode]);
+    $query = $conn->prepare("SELECT * FROM producten WHERE idproduct = :idproduct");
+    $query->execute([':idproduct'=>$idproduct]);
     $result = $query->fetch();
 
     return $result;
@@ -59,7 +59,7 @@
  function OvzBieren(){
 
     // Haal alle bier record uit de tabel 
-    $result = GetData("bier");
+    $result = GetData("producten");
     
     //print table
     PrintTable($result);
@@ -75,6 +75,37 @@
     PrintTable($result);
      
  }
+
+ function dropDown($label, $data) {
+    foreach($data as $row){
+        $text = "<option value= '$row[foto]'$row[foto]</option>";
+        echo $text;
+
+/*
+        <option value='volvo'>Volvo</option>
+        <option value='saab'>Saab</option>
+        <option value='mercedes'>Mercedes</option>
+        <option value='audi'>Audi</option>
+*/ 
+
+$text .= "</select>";
+
+echo "$text";
+
+    }
+ }
+
+ function insert_bier($idproduct, $productnaam, $prijs, $leveranciers_idleverancier, $categorieen_idcategorie, $foto) {
+    $conn = ConnectDb();
+    
+    $query = $conn->prepare("INSERT INTO producten (idproduct, productnaam, prijs, categorieen_idcategorie, leveranciers_idleverancier, foto ) 
+    VALUES (:idproduct, :productnaam, :prijs, :categorieen_idcategorie, :leveranciers_idleverancier, :foto)");
+    $query->execute([
+        ':idproduct'=>$idproduct, ':productnaam' => $productnaam, 
+        ':prijs' => $prijs, ':categorieen_idcategorie' => $categorieen_idcategorie, ':leveranciers_idleverancier' => $leveranciers_idleverancier, ':foto' => $foto ]);
+    
+    return $query->rowCount() === 1; // return true if a single row was affected
+}
 
  function PrintTableTest($result){
     // Zet de hele table in een variable en print hem 1 keer 
@@ -121,8 +152,10 @@ function PrintTable($result){
 
 function CrudBieren(){
 
+   echo '<a href="insert_voorraad.php">Insert voorraad</a>';
+   
     // Haal alle bier record uit de tabel 
-    $result = GetData("bier");
+    $result = GetData("producten");
     
     //print table
     PrintCrudBier($result);
@@ -153,12 +186,13 @@ function PrintCrudBier($result){
         
         // Wijzig knopje
         $table .= "<td>". 
-            "<form method='post' action='update_bieren.php?biercode=$row[biercode]' >       
+            "<form method='post' action='update_voorraad.php?idproduct=$row[idproduct]' >       
                     <button name='wzg'>Wzg</button>	 
             </form>" . "</td>";
 
         // Delete via linkje href
-        $table .= '<td><a href="delete_bieren.php?biercode='.$row["biercode"].'">verwijder</a></td>';
+        $table .= '<td><a href="delete_voorraad.php?idproduct='.$row["idproduct"].'">verwijder</a></td>';
+        $table .= '<td><a href="insert_voorraad.php?idproduct='.$row["idproduct"].'">Insert</a></td>';
         
         $table .= "</tr>";
     }
@@ -172,14 +206,14 @@ function UpdateBier($row){
 
     $conn = ConnectDb();
 
-    $sql = "UPDATE `bier` 
+    $sql = "UPDATE `producten` 
     SET 
-    `naam` = '$row[naam]', 
-    `soort` = '$row[soort]', 
-    `stijl` = '$row[stijl]', 
-    `alcohol` = '$row[alcohol]', 
-    `brouwcode` = '$row[brouwcode]'
-    WHERE `bier`.`biercode` = $row[biercode]";
+    `productnaam` = '$row[productnaam]', 
+    `prijs` = '$row[prijs]', 
+    `categorieen_idcategorie` = '$row[categorieen_idcategorie]', 
+    `leveranciers_idleverancier` = '$row[leveranciers_idleverancier]', 
+    `foto` = '$row[foto]'
+    WHERE `producten`.`idproduct` = $row[idproduct]";
     $query = $conn->prepare($sql);
     $query->execute();
 }
@@ -190,8 +224,8 @@ function DeleteBier($row){
     $conn = ConnectDb();
 
     $sql = "DELETE 
-    FROM bier
-    WHERE `bier`.`biercode` = $row[biercode]";
+    FROM producten
+    WHERE `producten`.`idproduct` = $row[idproduct]";
     $query = $conn->prepare($sql);
     $query->execute();
 }
